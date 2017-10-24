@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>videoJSPlayer</title>
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- build:css styles/vivid-lib.min.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/video.js/dist/video-js.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- build:css styles/vivid.min.css -->
+  
+  <link rel="stylesheet" href="styles/vivid.css">
+  <link href="styles/videojs-panorama.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-ads/4.2.6/videojs.ads.css" />
+  <style>
+
+  </style>
+  <!-- endbuild -->
+ 
+ 
+<script type="text/javascript">
+ // Google Analytics: change UA-XXXXX-X to be your site's ID.
+ (function(b, o, i, l, e, r) {
+   b.GoogleAnalyticsObject = l;
+   b[l] || (b[l] =
+     function() {
+       (b[l].q = b[l].q || []).push(arguments)
+     });
+   b[l].l = +new Date;
+   e = o.createElement(i);
+   r = o.getElementsByTagName(i)[0];
+   e.src = 'https://www.google-analytics.com/analytics.js';
+   r.parentNode.insertBefore(e, r)
+ }(window, document, 'script', 'ga'));
+ ga('create', 'UA-XXXXX-X');
+ ga('send', 'pageview');
+ </script>
+</head>
+<body>
+<!--[if IE]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+  your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="hero-unit">
+  <video id="example_video_1" class="video-js vjs-big-play-centered vjs-default-skin" autoplay controls muted></video>
+</div>
+
+
+
+<script>
+  document.onreadystatechange = function () {
+    if (document.readyState === 'complete') {
+       
+      var config1={
+        id: 'example_video_1', // Required
+        source: [ // Required
+       
+         {
+            src: 'https://www.w3schools.com/TAgs/movie.mp4',
+            type: 'video/mp4'
+          }, {
+            src: 'http://s1510.vuclip.com/e4/ee/e4ee57e23886bd7c38c0ea33659c51f9/np63207/' +
+            'e4ee_w_5.np.3gp?c=1131202656&u=3108366365&s=BWmMeF',
+            type: 'video/mp4'
+          }
+        ],
+            ad:'http://pubads.g.doubleclick.net/gampad/ads?sz=640x480&' +
+    'iu=/124319096/external/ad_rule_samples&ciu_szs=300x250&ad_rule=1&' +
+    'impl=s&gdfp_req=1&env=vp&output=xml_vmap1&unviewed_position_start=1&' +
+    'cust_params=sample_ar%3Dpremidpostpod%26deployment%3Dgmf-js&cmsid=496&' +
+    'vid=short_onecue&correlator=',
+        productid:'p-1000',
+        slotid:'s-1000',
+        siteid:'s-1001',
+        userid:'u-1000',
+        controls: true, // Optional
+        autoplay: false, // Optional
+        preload: false, // Optional
+        loop: false, // Optional
+        dim:'360 *460',
+        mute:true,
+        playsinline:true,
+        ads_enabled:true,
+        brand_icon:'https://s3-ap-southeast-1.amazonaws.com/videojs.vuclip.com/staging/viu.jpg',
+        brand_text:'vuclip.com',
+        brand_site:'http://m.vuclip.com',
+        plugins: {}, // Optional
+        cid: 1145224024, // Required
+         build_version: '1.0.0',
+        downloadUrl: 'http://s1510.vuclip.com/e4/ee/e4ee57e23886bd7c38c0ea33659c51f9/np63207/' +
+        'e4ee_w_5.np.3gp?c=1131202656&u=3108366365&s=BWmMeF' // Required
+      };
+       
+        var config2={
+        id: 'example_video_2', // Required
+        source: [ // Required
+       
+         {
+            src: 'https://www.w3schools.com/TAgs/movie.mp4',
+            type: 'video/mp4'
+          }, {
+            src: 'http://s1510.vuclip.com/e4/ee/e4ee57e23886bd7c38c0ea33659c51f9/np63207/' +
+            'e4ee_w_5.np.3gp?c=1131202656&u=3108366365&s=BWmMeF',
+            type: 'video/mp4'
+          }
+        ],
+            ad:'http://pubads.g.doubleclick.net/gampad/ads?sz=640x480&' +
+    'iu=/124319096/external/ad_rule_samples&ciu_szs=300x250&ad_rule=1&' +
+    'impl=s&gdfp_req=1&env=vp&output=xml_vmap1&unviewed_position_start=1&' +
+    'cust_params=sample_ar%3Dpremidpostpod%26deployment%3Dgmf-js&cmsid=496&' +
+    'vid=short_onecue&correlator=',
+        productid:'p-1000',
+        slotid:'s-1000',
+        userid:'u-1000',
+         siteid:'s-1001',
+        controls: true, // Optional
+        autoplay: false, // Optional
+        preload: false, // Optional
+        loop: false, // Optional
+        dim:'360 *460',
+         mute:false,
+        playsinline:true,
+        ads_enabled:true,
+        brand_icon:'',
+        brand_text:'vuclip.com',
+        brand_site:'http://m.vuclip.com',
+        plugins: {}, // Optional
+        cid: 'cid-10000', // Required
+         build_version: '1.0.0',
+        downloadUrl: 'http://s1510.vuclip.com/e4/ee/e4ee57e23886bd7c38c0ea33659c51f9/np63207/' +
+        'e4ee_w_5.np.3gp?c=1131202656&u=3108366365&s=BWmMeF' // Required
+      };
+       var config3={
+        id: 'example_video_3', // Required
+        source: [ // Required
+       
+         {
+            src: 'https://www.w3schools.com/TAgs/movie.mp4',
+            type: 'video/mp4'
+          }, {
+            src: 'http://s1510.vuclip.com/e4/ee/e4ee57e23886bd7c38c0ea33659c51f9/np63207/' +
+            'e4ee_w_5.np.3gp?c=1131202656&u=3108366365&s=BWmMeF',
+            type: 'video/mp4'
+          }
+        ],
+            ad:'http://pubads.g.doubleclick.net/gampad/ads?sz=640x480&' +
+    'iu=/124319096/external/ad_rule_samples&ciu_szs=300x250&ad_rule=1&' +
+    'impl=s&gdfp_req=1&env=vp&output=xml_vmap1&unviewed_position_start=1&' +
+    'cust_params=sample_ar%3Dpremidpostpod%26deployment%3Dgmf-js&cmsid=496&' +
+    'vid=short_onecue&correlator=',
+        productid:'p-1000',
+        slotid:'s-1000',
+        userid:'u-1000',
+         siteid:'s-1001',
+        controls: true, // Optional
+        autoplay: false, // Optional
+        preload: false, // Optional
+        loop: false, // Optional
+        mute:false,
+        playsinline:true,
+        dim:'360 *460',
+        ads_enabled:true,
+        brand_icon:'',
+        brand_text:'vuclip.com',
+        brand_site:'http://m.vuclip.com',
+        plugins: {}, // Optional
+        cid: 'cid-10000', // Required
+         build_version: '1.0.0',
+        downloadUrl: 'http://s1510.vuclip.com/e4/ee/e4ee57e23886bd7c38c0ea33659c51f9/np63207/' +
+        'e4ee_w_5.np.3gp?c=1131202656&u=3108366365&s=BWmMeF' // Required
+      };
+       var config4={
+        id: 'example_video_4', // Required
+        source: [ // Required
+       
+         {
+            src: 'https://www.w3schools.com/TAgs/movie.mp4',
+            type: 'video/mp4'
+          }, {
+            src: 'http://s1510.vuclip.com/e4/ee/e4ee57e23886bd7c38c0ea33659c51f9/np63207/' +
+            'e4ee_w_5.np.3gp?c=1131202656&u=3108366365&s=BWmMeF',
+            type: 'video/mp4'
+          }
+        ],
+            ad:'http://pubads.g.doubleclick.net/gampad/ads?sz=640x480&' +
+    'iu=/124319096/external/ad_rule_samples&ciu_szs=300x250&ad_rule=1&' +
+    'impl=s&gdfp_req=1&env=vp&output=xml_vmap1&unviewed_position_start=1&' +
+    'cust_params=sample_ar%3Dpremidpostpod%26deployment%3Dgmf-js&cmsid=496&' +
+    'vid=short_onecue&correlator=',
+        productid:'p-1000',
+        slotid:'s-1000',
+         siteid:'s-1001',
+        userid:'u-1000',
+        controls: true, // Optional
+        autoplay: false, // Optional
+        preload: false, // Optional
+        loop: false, // Optional
+        dim:'360 *460',
+        ads_enabled:true,
+        mute:false,
+        playsinline:true,
+        brand_icon:'',
+        brand_text:'vuclip.com',
+        brand_site:'http://m.vuclip.com',
+        plugins: {}, // Optional
+        cid: 'cid-10000', // Required
+        build_version: '1.0.0',
+        downloadUrl: 'http://s1510.vuclip.com/e4/ee/e4ee57e23886bd7c38c0ea33659c51f9/np63207/' +
+        'e4ee_w_5.np.3gp?c=1131202656&u=3108366365&s=BWmMeF' // Required
+      };
+        var newPlayerInstance1 = new vivid(config1);
+      
+   
+
+    console.log(videojs.players);
+    $('.ima-controls-div').html('');
+
+    
+    }
+  };
+</script>
+
+<!-- build:js scripts/vivid-lib.min.js -->
+<!-- bower:js -->
+<script src="/bower_components/video.js/dist/video.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js scripts/vivid.min.js -->
+
+ 
+ <!-- Video.js 5 -->
+<!--<script src="/scripts/videojs-panorama.v5.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r76/three.js"></script>-->
+
+<script src="/scripts/vivid.js"></script>
+
+<script src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
+
+  
+<script></script>
+<!-- endbuild -->
+</body>
+</html>

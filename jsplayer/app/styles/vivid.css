@@ -1,0 +1,97 @@
+.ima-ad-container {
+  left: 0;
+  top: 0;
+
+}
+
+video {
+  width: calc(1px + 100%);
+  height: calc(1px - 100%);
+}
+
+.video-js {
+  width: 100% !important;
+
+}
+
+.vjs-brand-container img {
+  height: 16px;
+  width: 42px;
+}
+
+.vjs-ad-loading > video {
+  opacity: 0;
+}
+
+.vjs-brand-container {
+  padding-top: 7px !important;
+}
+
+.vjs-ad-loading > .vjs-loading-spinner {
+  display: block;
+  z-index: 1450;
+  opacity: 1;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite
+}
+
+.vjs-ad-playing > .vjs-loading-spinner {
+  display: none !important;
+  z-index: 1450;
+  opacity: 1;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.video-js .vjs-big-play-button {
+
+  background-image: url(//vuclip-a.akamaihd.net/viuembed/webplayer/assets/icons/viu-play.png);
+  border-radius: 0;
+  border: none;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  height: 1.7em;
+  width: 2em;
+}
+
+ .video-js .vjs-big-play-button:before{
+  content: "";
+}
+
+.video-js .vjs-big-play-button:focus {
+  outline: 0;
+  border-color: #fff;
+  background-color:transparent !important;
+  background-color:transparent !important;
+  -webkit-transition: all 0s;
+  -moz-transition: all 0s;
+  -o-transition: all 0s;
+  transition: all 0s; }
+
+  .video-js:hover .vjs-big-play-button{
+    outline: 0;
+    border-color: #fff;
+    background-color:transparent !important;
+    background-color:transparent !important;
+    -webkit-transition: all 0s;
+    -moz-transition: all 0s;
+    -o-transition: all 0s;
+    transition: all 0s; }
